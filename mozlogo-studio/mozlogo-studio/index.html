@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MozLogo Studio — Professional Logos</title>
+  <link rel="icon" href="assets/mz_modern.png" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">MZ</div>
+        <div class="brand-text">
+          <h1 id="siteTitle">MozLogo Studio — Professional Logos</h1>
+          <p class="lead" id="siteLead">Modern visual identities, delivered fast. Starting at $20.</p>
+        </div>
+        <div class="actions">
+          <button id="langEn" class="btn-ghost">EN</button>
+          <button id="langPt" class="btn-ghost">PT</button>
+          <a id="waBtn" class="btn-primary" href="#" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="left">
+      <article class="card">
+        <h2>What we deliver</h2>
+        <p>Professional logos, PNG/JPG/SVG files, brand guide (when applicable) and mockups.</p>
+        <div class="portfolio" id="portfolio">
+          <img src="assets/mz_modern.png" alt="MZ Modern">
+          <img src="assets/greenfarm.png" alt="GreenFarm">
+          <img src="assets/peak.png" alt="Peak">
+          <img src="assets/aura.png" alt="Aura">
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Plans</h2>
+        <div class="plans">
+          <div class="plan">
+            <h3>Starter</h3>
+            <p>1 concept + 1 revision — delivery 2 days</p>
+            <div class="price">$20</div>
+          </div>
+          <div class="plan">
+            <h3>Professional</h3>
+            <p>2 concepts + 2 revisions — delivery 3 days</p>
+            <div class="price">$40</div>
+          </div>
+          <div class="plan featured">
+            <h3>Premium</h3>
+            <p>3 concepts + unlimited revisions + full kit — delivery 4 days</p>
+            <div class="price">$70</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>How it works</h2>
+        <ol>
+          <li>Send your brief</li>
+          <li>Design delivered in 48–96h</li>
+          <li>Revisions until you approve</li>
+          <li>Final files delivered</li>
+        </ol>
+      </article>
+    </section>
+
+    <aside class="right card">
+      <h2 id="orderHeading">Place an order</h2>
+      <form id="orderForm" class="order-form">
+        <input type="hidden" id="recipientEmail" value="reannyjr@gmail.com">
+
+        <label>Name / Company
+          <input id="name" name="name" type="text" required>
+        </label>
+
+        <label>Email
+          <input id="email" name="email" type="email" required>
+        </label>
+
+        <label>WhatsApp (with country code)
+          <input id="phone" name="phone" type="text" placeholder="+258 8xx xxx xxx" required>
+        </label>
+
+        <label>Package
+          <select id="package" name="package">
+            <option value="starter">Starter — $20</option>
+            <option value="pro">Professional — $40</option>
+            <option value="premium">Premium — $70</option>
+          </select>
+        </label>
+
+        <label>Service
+          <select id="service" name="service">
+            <option value="logo">Logo Design</option>
+            <option value="posts">Social Media Posts</option>
+            <option value="flyer">Flyer / Banner</option>
+            <option value="businesscard">Business Card</option>
+            <option value="minisite">Mini-site One-Page</option>
+          </select>
+        </label>
+
+        <label>Brief
+          <textarea id="brief" name="brief" required></textarea>
+        </label>
+
+        <label>Preferred payment
+          <select id="payment" name="payment">
+            <option value="mpesa">M-Pesa</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank">Bank transfer</option>
+          </select>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send order</button>
+          <button type="button" id="waQuick" class="btn-ghost">Quick WhatsApp</button>
+        </div>
+      </form>
+
+      <div id="response" class="feedback"></div>
+      <div id="thankyou" class="feedback" style="display:none">Order received — Thank you!</div>
+
+      <div class="payments card">
+        <h3>Payment methods</h3>
+        <ul>
+          <li>M-Pesa</li>
+          <li>PayPal</li>
+          <li>Bank transfer</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> MozLogo Studio</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
